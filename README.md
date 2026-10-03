@@ -28,6 +28,10 @@ Git must be installed and available in the terminal before this project can be p
 
 Never commit `.env`. The repository ignores environment files while allowing `.env.example` to be shared.
 
+## GitHub Pages
+
+The workflow in `.github/workflows/deploy-pages.yml` builds and deploys the site whenever changes are pushed to `main`. In repository Settings / Pages, set the build and deployment source to **GitHub Actions**. Add repository Actions secrets named `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` so customer flows can connect to Supabase; use only the public anon/publishable key, never a service-role key. The project site URL is `https://ayshaysh5757-sudo.github.io/BiteX/` after the workflow completes successfully.
+
 ## Production launch checklist
 
 - Add the production Supabase URL and anon key to the hosting provider's environment variables.
