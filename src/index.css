@@ -1,0 +1,36 @@
+:root {
+  font-family: 'Manrope', sans-serif;
+  color: #f8f4ec;
+  background: #0b0d0f;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --bg: #0b0d0f;
+  --panel: #151719;
+  --panel-alt: #1d2022;
+  --ink: #f5f0e8;
+  --muted: #a9aaa5;
+  --gold: #d6b16a;
+  --gold-strong: #b88940;
+  --rust: #d86e4d;
+  --rust-deep: #a94d36;
+  --line: rgba(245, 240, 232, 0.13);
+  --shadow: 0 28px 70px rgba(0, 0, 0, 0.32);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  min-width: 0;
+  background:
+    radial-gradient(circle at 12% 0%, rgba(214, 177, 106, 0.11), transparent 24%),
+    radial-gradient(circle at 92% 14%, rgba(216, 110, 77, 0.1), transparent 24%),
+    #0b0d0f;
+  color: var(--ink);
+}
+
+img { display: block; max-width: 100%; }
+button, a { font: inherit; }
+button { cursor: pointer; }
+::selection { background: rgba(217, 179, 106, 0.28); }
