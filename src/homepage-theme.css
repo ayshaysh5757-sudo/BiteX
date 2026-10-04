@@ -11877,6 +11877,12 @@ body:has(#app-theme > .customer-dashboard),
   -webkit-text-fill-color: #b5c9bd !important;
 }
 
+#app-theme:has(.customer-dashboard) .dashboard-sidebar .dashboard-sidebar-footer :is(span, button),
+#app-theme:has(.customer-dashboard) .dashboard-sidebar .dashboard-sidebar-footer button * {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
 #app-theme:has(.customer-dashboard) .dashboard-sidebar .dashboard-avatar {
   color: #164b3a !important;
   -webkit-text-fill-color: #164b3a !important;
