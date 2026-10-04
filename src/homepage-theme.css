@@ -11864,6 +11864,11 @@ body:has(#app-theme > .customer-dashboard),
   -webkit-text-fill-color: #f1f5ed !important;
 }
 
+#app-theme:has(.customer-dashboard) .dashboard-sidebar .dashboard-nav button small {
+  color: #17372e !important;
+  -webkit-text-fill-color: #17372e !important;
+}
+
 #app-theme:has(.customer-dashboard) .dashboard-sidebar .dashboard-nav-label,
 #app-theme:has(.customer-dashboard) .dashboard-sidebar .dashboard-profile small,
 #app-theme:has(.customer-dashboard) .dashboard-sidebar .dashboard-sidebar-footer > span {
