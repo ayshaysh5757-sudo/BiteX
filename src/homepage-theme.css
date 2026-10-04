@@ -11803,6 +11803,124 @@ main#app-theme:has(> .hero-section) > .hero-section .hero-copy > .hero-search bu
   }
 }
 
+#app-theme > .order-page .order-confirmation--empty {
+  grid-template-columns: 1.08fr 0.92fr;
+  width: min(100%, 900px);
+  min-height: 320px;
+  padding: 16px 18px 16px 42px;
+  border: 1px solid #d4b16d !important;
+  border-radius: 28px !important;
+  background: linear-gradient(135deg, #fffdf8 0%, #f3eadd 100%) !important;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.32), inset 0 0 0 4px rgba(255, 255, 255, 0.72) !important;
+}
+
+#app-theme > .order-page .order-confirmation--empty .order-confirmation-copy {
+  align-items: center;
+  padding: 16px 0;
+  text-align: center;
+}
+
+#app-theme > .order-page .order-confirmation--empty .confirmation-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 12px;
+  color: #9b6b31 !important;
+}
+
+#app-theme > .order-page .order-confirmation--empty .confirmation-mark i {
+  width: 42px;
+  height: 1px;
+  background: #c69d5c;
+}
+
+#app-theme > .order-page .order-confirmation--empty .eyebrow {
+  margin: 0 0 9px;
+  color: #754515 !important;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+}
+
+#app-theme > .order-page .order-confirmation--empty h2 {
+  max-width: 540px;
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 800;
+  line-height: 0.98;
+}
+
+#app-theme > .order-page .order-confirmation--empty .order-confirmation-copy > p:not(.eyebrow) {
+  max-width: 360px;
+  margin: 14px 0 18px;
+  color: #353530 !important;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.65;
+}
+
+#app-theme > .order-page .order-confirmation--empty .order-confirmation-gallery {
+  height: 286px;
+  overflow: hidden;
+  border: 2px solid #d8b979;
+  border-radius: 46% 18px 18px 46%;
+  background: #e2d2b6;
+  box-shadow: 0 14px 32px rgba(40, 31, 24, 0.14);
+}
+
+#app-theme > .order-page .order-confirmation--empty .order-confirmation-gallery-card {
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+#app-theme > .order-page .order-confirmation--empty .order-confirmation-gallery-card--1,
+#app-theme > .order-page .order-confirmation--empty .order-confirmation-gallery-card--3 {
+  display: none;
+}
+
+#app-theme > .order-page .order-confirmation--empty .order-confirmation-gallery-card--2 {
+  left: 0;
+  height: 100%;
+  transform: none;
+}
+
+@media (max-width: 760px) {
+  #app-theme > .order-page .order-confirmation--empty {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 28px 22px 18px;
+  }
+
+  #app-theme > .order-page .order-confirmation--empty .order-confirmation-gallery {
+    grid-row: 1;
+    height: 220px;
+    border-radius: 18px;
+  }
+
+  #app-theme > .order-page .order-confirmation--empty .order-confirmation-copy {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 420px) {
+  #app-theme > .order-page .order-confirmation--empty {
+    padding: 20px 16px 14px;
+    border-radius: 20px !important;
+  }
+
+  #app-theme > .order-page .order-confirmation--empty h2 {
+    font-size: clamp(30px, 9vw, 40px);
+  }
+
+  #app-theme > .order-page .order-confirmation--empty .order-confirmation-gallery {
+    height: 180px;
+  }
+}
+
 #app-theme > .reserve-page .reservation-form input:focus,
 #app-theme > .reserve-page .reservation-form select:focus {
   border: none !important;
