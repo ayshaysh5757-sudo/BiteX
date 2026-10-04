@@ -11883,6 +11883,15 @@ body:has(#app-theme > .customer-dashboard),
   -webkit-text-fill-color: #ffffff !important;
 }
 
+#app-theme:has(.customer-dashboard) > .site-footer.bitex-footer {
+  color: #f4f5f0 !important;
+}
+
+#app-theme:has(.customer-dashboard) > .site-footer.bitex-footer :is(.brand-text b, .brand-text small, .footer-label, .bitex-footer-brand p, .bitex-footer-brand p strong, .bitex-footer-brand p span, .bitex-footer-contact a, .bitex-footer-hours strong) {
+  color: #f4f5f0 !important;
+  -webkit-text-fill-color: #f4f5f0 !important;
+}
+
 #app-theme:has(.customer-dashboard) .dashboard-sidebar .dashboard-avatar {
   color: #164b3a !important;
   -webkit-text-fill-color: #164b3a !important;
