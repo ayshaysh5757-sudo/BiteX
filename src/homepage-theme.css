@@ -11896,12 +11896,15 @@ main#app-theme:has(> .hero-section) > .hero-section .hero-copy > .hero-search bu
   }
 
   #app-theme > .order-page .order-confirmation--empty .order-confirmation-gallery {
+    grid-column: 1;
     grid-row: 1;
     height: 220px;
     border-radius: 18px;
   }
 
   #app-theme > .order-page .order-confirmation--empty .order-confirmation-copy {
+    grid-column: 1;
+    grid-row: 2;
     padding: 10px 0;
   }
 }
