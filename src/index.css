@@ -32,5 +32,17 @@ body {
 
 img { display: block; max-width: 100%; }
 button, a { font: inherit; }
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus,
+a:focus-visible,
+a:visited:hover,
+a:visited:focus,
+a:visited:active {
+  color: inherit !important;
+  text-decoration: none;
+}
 button { cursor: pointer; }
 ::selection { background: rgba(217, 179, 106, 0.28); }

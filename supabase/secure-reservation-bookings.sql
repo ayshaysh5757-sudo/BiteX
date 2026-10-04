@@ -75,3 +75,5 @@ $$;
 
 revoke all on function public.create_reservation(text, text, text, text, integer, date, integer) from public;
 grant execute on function public.create_reservation(text, text, text, text, integer, date, integer) to anon, authenticated;
+
+notify pgrst, 'reload schema';
