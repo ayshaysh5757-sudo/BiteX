@@ -11884,6 +11884,8 @@ body:has(#app-theme > .customer-dashboard),
 }
 
 #app-theme:has(.customer-dashboard) > .site-footer.bitex-footer {
+  border-color: rgba(255, 255, 255, 0.14) !important;
+  background: #000000 !important;
   color: #f4f5f0 !important;
 }
 
