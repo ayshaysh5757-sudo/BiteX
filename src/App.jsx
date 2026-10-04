@@ -1692,7 +1692,7 @@ function HistoryPage({ history = [], restaurant, user, setCart, setHistory, setP
     <aside className="dashboard-sidebar">
       <div className="dashboard-profile"><span className="dashboard-avatar" aria-label={`${displayName} logo`} title={`${displayName} logo`}>{initials}</span><span><strong>{displayName}</strong><small>{displayEmail}</small></span></div>
       <p className="dashboard-nav-label">YOUR ACCOUNT</p>
-      <nav className="dashboard-nav" aria-label="Dashboard sections">{navItems.map(([section, label, Icon]) => <button key={section} type="button" className={activeSection === section ? 'active' : ''} onClick={() => setActiveSection(section)}><Icon size={17} aria-hidden="true" /><span>{label}</span>{section === 'orders' && orders.length > 0 && <small>{orders.length}</small>}</button>)}</nav>
+      <nav className="dashboard-nav" aria-label="Dashboard sections">{navItems.map(([section, label, Icon]) => <button key={section} type="button" className={activeSection === section ? 'active' : ''} onClick={() => setActiveSection(section)}><Icon size={17} aria-hidden="true" /><span>{label}</span>{section === 'orders' && <small aria-label={`${orders.length} orders`}>{orders.length}</small>}</button>)}</nav>
       <div className="dashboard-sidebar-footer"><span>Good food, close to home.</span>{user && <button type="button" onClick={() => supabase?.auth.signOut()}><LogOut size={16} /> Sign out</button>}</div>
     </aside>
     <div className="dashboard-content">

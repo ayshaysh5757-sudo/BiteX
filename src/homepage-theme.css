@@ -11865,6 +11865,7 @@ body:has(#app-theme > .customer-dashboard),
 }
 
 #app-theme:has(.customer-dashboard) .dashboard-sidebar .dashboard-nav button small {
+  background: #f3cf8b !important;
   color: #17372e !important;
   -webkit-text-fill-color: #17372e !important;
 }
