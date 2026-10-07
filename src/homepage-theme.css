@@ -12576,3 +12576,15 @@ main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-v
     line-height: 1 !important;
   }
 }
+
+main#app-theme:has(> .restaurants-page) > .restaurants-page .restaurant-page-search,
+main#app-theme:has(> .restaurants-page) > .restaurants-page .restaurant-page-search > span,
+main#app-theme:has(> .restaurants-page) > .restaurants-page .restaurant-page-search > button {
+  border-radius: 0 !important;
+}
+
+main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-page-search,
+main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-page-search > span,
+main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-page-search > button {
+  border-radius: 0 !important;
+}
