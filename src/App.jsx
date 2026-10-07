@@ -612,7 +612,7 @@ function HomePage({ onExploreRestaurants }) {
       {accountNotice && <p className="account-welcome" role="status">{accountNotice}</p>}
       <section className="hero-section">
         <video className="hero-video" autoPlay loop muted playsInline preload="metadata" aria-hidden="true" onLoadedMetadata={(event) => { event.currentTarget.playbackRate = 0.8 }}>
-          <source src="/videos/hero-food.mp4" type="video/mp4" />
+          <source src={`${import.meta.env.BASE_URL}videos/hero-food.mp4`} type="video/mp4" />
         </video>
         <div className="hero-video-overlay" aria-hidden="true" />
         <div className="hero-copy">
