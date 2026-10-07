@@ -12578,13 +12578,16 @@ main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-v
 }
 
 main#app-theme:has(> .restaurants-page) > .restaurants-page .restaurant-page-search,
-main#app-theme:has(> .restaurants-page) > .restaurants-page .restaurant-page-search > span,
-main#app-theme:has(> .restaurants-page) > .restaurants-page .restaurant-page-search > button {
-  border-radius: 0 !important;
+main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-page-search {
+  border-radius: 999px !important;
 }
 
-main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-page-search,
-main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-page-search > span,
+main#app-theme:has(> .restaurants-page) > .restaurants-page .restaurant-page-search > span,
+main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-page-search > span {
+  border-radius: 50% !important;
+}
+
+main#app-theme:has(> .restaurants-page) > .restaurants-page .restaurant-page-search > button,
 main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-page-search > button {
   border-radius: 0 !important;
 }
