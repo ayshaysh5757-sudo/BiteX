@@ -216,6 +216,25 @@ main:has(.hero-section) .hero-section {
   box-shadow: none;
 }
 
+main:has(.hero-section) .hero-video,
+main:has(.hero-section) .hero-video-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+main:has(.hero-section) .hero-video {
+  z-index: 0;
+  object-fit: cover;
+}
+
+main:has(.hero-section) .hero-video-overlay {
+  z-index: 0;
+  background: linear-gradient(90deg, rgba(244, 240, 234, 0.82) 0%, rgba(244, 240, 234, 0.72) 47%, rgba(0, 0, 0, 0.12) 100%);
+  pointer-events: none;
+}
+
 main:has(.hero-section) .hero-copy {
   position: relative;
   z-index: 1;
@@ -359,6 +378,7 @@ main:has(.hero-section) .hero-copy > .primary-button span {
 
 main:has(.hero-section) .hero-image {
   position: relative;
+  z-index: 1;
   min-height: 670px;
   margin: 0;
   border-radius: 0;
@@ -391,6 +411,50 @@ main:has(.hero-section) .featured-badge {
   text-align: center;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.14);
   backdrop-filter: blur(4px);
+}
+
+main:has(.hero-section) .home-video-section {
+  padding: clamp(24px, 4vw, 52px) clamp(16px, 5vw, 84px);
+  background: #fff;
+}
+
+main:has(.hero-section) .home-video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: min(100%, 1320px);
+  gap: clamp(0px, calc(2vw - 27px), 1px);
+  margin: 0 auto;
+}
+
+main:has(.hero-section) .home-video-card {
+  min-width: 0;
+  padding: 5px;
+  overflow: hidden;
+  border: 0;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: none;
+}
+
+main:has(.hero-section) .home-video-card video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 10px;
+  background: #201d1b;
+}
+
+@media (max-width: 620px) {
+  main:has(.hero-section) .home-video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 621px) and (max-width: 900px) {
+  main:has(.hero-section) .home-video-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 main:has(.hero-section) .home-trust-strip {
@@ -6400,7 +6464,7 @@ main#app-theme:has(> .hero-section) > .site-footer.bitex-footer .bitex-footer-ho
 
   #app-theme .menu-page .menu-card {
     height: 310px !important;
-    grid-template-rows: 166px minmax(0, 1fr) !important;
+    grid-template-rows: 180px minmax(0, 1fr) !important;
   }
 
   #app-theme .menu-page .menu-card .dish-image {
@@ -7919,7 +7983,7 @@ main#app-theme:has(> .hero-section) > .hero-section .hero-copy > .primary-button
   grid-row: 1 !important;
   display: grid !important;
   grid-template-columns: max-content minmax(0, 1fr) !important;
-  grid-template-rows: minmax(0, 1fr) auto !important;
+  grid-template-rows: minmax(0, 1fr) !important;
   align-content: stretch !important;
   align-items: end !important;
   gap: 10px 12px !important;
@@ -7963,7 +8027,7 @@ main#app-theme:has(> .hero-section) > .hero-section .hero-copy > .primary-button
   grid-column: 1 !important;
   grid-row: 2 !important;
   margin: 0 !important;
-  padding: 7px 10px !important;
+  padding: 4px 10px !important;
   background: #fffaf2 !important;
 }
 
@@ -10070,7 +10134,7 @@ main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-v
 }
 
 main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) > .restaurant-card-body > .restaurant-link,
-main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) > .restaurant-link {
+main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) > .restaurant-card-body > .restaurant-link {
   display: flex !important;
   width: 100% !important;
   min-height: 48px !important;
@@ -10161,7 +10225,7 @@ main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-v
   font-weight: 800 !important;
 }
 
-main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) > .restaurant-link {
+main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) > .restaurant-card-body > .restaurant-link {
   min-height: 52px !important;
   font-size: 15px !important;
   font-weight: 900 !important;
@@ -10432,7 +10496,7 @@ main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-v
   font-size: 15px !important;
   font-weight: 900 !important;
   letter-spacing: .045em;
-  text-shadow: none !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, .45) !important;
   box-shadow: 0 6px 18px rgba(0, 0, 0, .32) !important;
 }
 
@@ -10457,12 +10521,12 @@ main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-v
 }
 
 main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) {
-  height: 372px !important;
+  height: 262px !important;
 }
 
 @media (max-width: 620px) {
   main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) {
-    height: 342px !important;
+    height: 232px !important;
   }
 }
 
@@ -10822,7 +10886,7 @@ main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-v
 
 main#app-theme:has(> .restaurants-page) > .restaurants-page .restaurant-grid > .restaurant-card:nth-child(n) .restaurant-link:is(:hover, :focus-visible),
 main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) > .restaurant-card-body > .restaurant-link:is(:hover, :focus-visible),
-main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) > .restaurant-link:is(:hover, :focus-visible) {
+main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) > .restaurant-card-body > .restaurant-link:is(:hover, :focus-visible) {
   background: #f5e3d6 !important;
   color: #111 !important;
   -webkit-text-fill-color: #111 !important;
@@ -11150,6 +11214,96 @@ main#app-theme:has(> .hero-section) > .hero-section .hero-copy > .hero-search bu
   background: transparent !important;
   background-image: none !important;
   box-shadow: none !important;
+}
+
+main#app-theme:has(> .hero-section) > .hero-section .hero-search {
+  padding: 0 0 0 4px !important;
+  min-height: 48px !important;
+  background: #fff !important;
+  border: 0 !important;
+}
+
+main#app-theme:has(> .hero-section) > .hero-section .hero-search input {
+  min-height: 36px !important;
+  padding-block: 0 !important;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+main#app-theme:has(> .hero-section) > .hero-section .hero-search button {
+  min-height: 38px !important;
+  padding-block: 0 !important;
+}
+
+main#app-theme:has(> .hero-section) > .hero-section .hero-search button,
+main#app-theme:has(> .hero-section) > .hero-section .hero-search button:is(:hover, :focus, :focus-visible, :active) {
+  border: 0 !important;
+  outline: 0 !important;
+  background: #176b60 !important;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  box-shadow: none !important;
+}
+
+main#app-theme:has(> .hero-section) > .hero-section .hero-search button:hover {
+  background: #14594f !important;
+}
+
+main#app-theme:has(> .hero-section) > .hero-section .hero-search input,
+main#app-theme:has(> .hero-section) > .hero-section .hero-search input::placeholder,
+main#app-theme:has(> .hero-section) > .hero-section .hero-search button {
+  font-weight: 500 !important;
+}
+
+main#app-theme:has(> .hero-section) > .hero-section > .hero-video-overlay {
+  z-index: 1;
+  background: linear-gradient(90deg, rgba(248, 243, 235, 0.38) 0%, rgba(248, 243, 235, 0.2) 56%, rgba(248, 243, 235, 0.06) 100%);
+}
+
+main#app-theme:has(> .hero-section) > .hero-section > .hero-copy {
+  z-index: 2 !important;
+}
+
+main#app-theme:has(> .hero-section) > .hero-section .hero-copy :is(.eyebrow, h1, h1 em, .hero-intro, .hero-features li, .feature-icon) {
+  color: #111 !important;
+  -webkit-text-fill-color: #111 !important;
+  -webkit-text-stroke: 0 !important;
+  text-shadow: none !important;
+}
+
+main#app-theme:has(> .hero-section) > .hero-section .hero-copy > :is(.eyebrow, h1, .hero-intro, .hero-search) {
+  animation: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+main#app-theme:has(> .hero-section) > .hero-section .hero-copy h1 {
+  -webkit-text-stroke-width: 0 !important;
+  text-shadow: none !important;
+}
+
+main#app-theme:has(> .hero-section) > .hero-section .hero-intro {
+  font-weight: 600 !important;
+  text-shadow: none !important;
+}
+
+main#app-theme:has(> .hero-section) > .hero-section .hero-features li {
+  flex: 1 1 0;
+  padding: 8px 10px !important;
+  border: 0 !important;
+  border-radius: 0;
+  background: transparent !important;
+  font-size: 11.5px !important;
+  font-weight: 700 !important;
+  line-height: 1.35;
+}
+
+main#app-theme:has(> .hero-section) > .hero-section .hero-features li > span:not(.feature-icon) {
+  color: #111 !important;
+  -webkit-text-fill-color: #111 !important;
+  -webkit-text-stroke: 0 !important;
+  text-shadow: none !important;
 }
 
 #app-theme > .site-header nav button.cart-button,
@@ -12211,4 +12365,214 @@ main a:visited:active,
 #app-theme a:visited:active {
   color: inherit !important;
   text-decoration: none;
+}
+
+/* Modern directory cards with a clear photo and a compact information panel. */
+main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  grid-template-rows: 166px minmax(0, 1fr) !important;
+  border: 1px solid #e8e1d8 !important;
+  border-radius: 18px !important;
+  background: #fffaf4 !important;
+  box-shadow: 0 8px 24px rgba(35, 25, 18, .08) !important;
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease !important;
+}
+
+main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n):hover {
+  transform: translateY(-4px) !important;
+  border-color: #d7c5b2 !important;
+  box-shadow: 0 16px 32px rgba(35, 25, 18, .14) !important;
+}
+
+main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n)::before {
+  inset: 0 0 82px !important;
+  background: linear-gradient(180deg, rgba(18, 13, 10, .04) 0%, rgba(18, 13, 10, .08) 68%, rgba(18, 13, 10, .28) 100%) !important;
+}
+
+main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) > .restaurant-image {
+  position: relative !important;
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  inset: auto !important;
+  height: 180px !important;
+  border-radius: 17px 17px 0 0 !important;
+}
+
+main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) > .restaurant-image img {
+  filter: brightness(1.08) saturate(1.12) contrast(1.03) !important;
+  transition: transform .35s ease, filter .35s ease !important;
+}
+
+main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n):hover > .restaurant-image img {
+  transform: scale(1.04) !important;
+}
+
+main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) .restaurant-tag {
+  top: 12px !important;
+  left: 12px !important;
+  padding: 4px 10px !important;
+  border: 1px solid rgba(255, 255, 255, .55) !important;
+  background: rgba(255, 250, 244, .94) !important;
+  color: #33271e !important;
+  -webkit-text-fill-color: #33271e !important;
+  font-size: 10px !important;
+  font-weight: 800 !important;
+  text-shadow: none !important;
+  box-shadow: 0 3px 10px rgba(20, 15, 12, .1) !important;
+  backdrop-filter: blur(8px);
+}
+
+main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) > .restaurant-card-body {
+  position: relative !important;
+  grid-column: 1 !important;
+  grid-row: 2 !important;
+  inset: auto !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  grid-template-rows: auto auto !important;
+  align-content: center !important;
+  justify-content: stretch !important;
+  gap: 4px !important;
+  padding: 10px 14px !important;
+  background: #fffaf4 !important;
+}
+
+main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) > .restaurant-card-body > div:first-child {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  display: flex !important;
+  min-height: 0 !important;
+  height: auto !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  align-self: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  position: static !important;
+  margin: 0 !important;
+}
+
+main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) .restaurant-cuisine {
+  display: none !important;
+  margin: 0 0 3px !important;
+  color: rgba(255, 250, 244, .86) !important;
+  -webkit-text-fill-color: rgba(255, 250, 244, .86) !important;
+  font-size: 9px !important;
+  font-weight: 800 !important;
+  letter-spacing: .09em !important;
+  text-shadow: none !important;
+}
+
+main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) h3,
+main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) h3.restaurant-name--short {
+  display: block !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: 1.25em !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding-bottom: 3px !important;
+  overflow: hidden !important;
+  text-align: center !important;
+  color: #211a16 !important;
+  -webkit-text-fill-color: #211a16 !important;
+  font-family: 'Manrope', Arial, sans-serif !important;
+  font-size: clamp(17px, 1.55vw, 22px) !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -.025em !important;
+  text-overflow: ellipsis;
+  text-shadow: none !important;
+  -webkit-text-stroke: 0 !important;
+  -webkit-line-clamp: unset !important;
+}
+
+main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) .restaurant-contact-details {
+  display: none !important;
+}
+
+main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) .restaurant-rating {
+  top: -154px !important;
+  right: 12px !important;
+  z-index: 3 !important;
+  gap: 4px !important;
+  padding: 6px 9px !important;
+  border: 1px solid rgba(255, 255, 255, .55) !important;
+  background: rgba(255, 250, 244, .94) !important;
+  color: #241c17 !important;
+  -webkit-text-fill-color: #241c17 !important;
+  box-shadow: 0 3px 10px rgba(20, 15, 12, .1) !important;
+  backdrop-filter: blur(8px);
+}
+
+main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) .restaurant-rating :is(strong, small) {
+  color: #241c17 !important;
+  -webkit-text-fill-color: #241c17 !important;
+  font-size: 10px !important;
+}
+
+main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) .restaurant-rating span {
+  color: #d18a2c !important;
+  -webkit-text-fill-color: #d18a2c !important;
+}
+
+main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) > .restaurant-card-body > .restaurant-link {
+  grid-column: 1 !important;
+  grid-row: 2 !important;
+  width: 100% !important;
+  height: 32px !important;
+  min-height: 32px !important;
+  margin: 0 !important;
+  padding: 2px 8px !important;
+  border: 1px solid #e8e1d8 !important;
+  border-radius: 9px !important;
+  background: #f3e8df !important;
+  color: #211a16 !important;
+  -webkit-text-fill-color: #211a16 !important;
+  font-size: 10px !important;
+  font-weight: 800 !important;
+  letter-spacing: .055em !important;
+  line-height: 1 !important;
+  box-sizing: border-box !important;
+  box-shadow: none !important;
+}
+
+main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) > .restaurant-card-body > .restaurant-link:is(:hover, :focus-visible) {
+  background: #f3e8df !important;
+  color: #211a16 !important;
+  -webkit-text-fill-color: #211a16 !important;
+}
+
+main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) > .restaurant-card-body > .restaurant-link span,
+main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) > .restaurant-card-body > .restaurant-link span svg {
+  color: #211a16 !important;
+  -webkit-text-fill-color: #211a16 !important;
+  stroke: #211a16 !important;
+}
+
+@media (max-width: 620px) {
+  main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) {
+    grid-template-rows: 150px minmax(0, 1fr) !important;
+  }
+
+  main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) > .restaurant-image {
+    height: 150px !important;
+  }
+
+  main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) .restaurant-rating {
+    top: -124px !important;
+  }
+
+  main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) > .restaurant-card-body {
+    padding: 7px 12px 9px !important;
+  }
+
+  main#app-theme:has(> .restaurants-page) > .restaurants-page.restaurant-details-view .restaurant-grid > .restaurant-card:nth-child(n) > .restaurant-card-body > .restaurant-link {
+    height: 32px !important;
+    min-height: 32px !important;
+    flex-basis: 32px !important;
+    padding: 2px 8px !important;
+    line-height: 1 !important;
+  }
 }

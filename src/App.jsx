@@ -611,6 +611,10 @@ function HomePage({ onExploreRestaurants }) {
     <>
       {accountNotice && <p className="account-welcome" role="status">{accountNotice}</p>}
       <section className="hero-section">
+        <video className="hero-video" autoPlay loop muted playsInline preload="metadata" aria-hidden="true" onLoadedMetadata={(event) => { event.currentTarget.playbackRate = 0.8 }}>
+          <source src="/videos/hero-food.mp4" type="video/mp4" />
+        </video>
+        <div className="hero-video-overlay" aria-hidden="true" />
         <div className="hero-copy">
           <p className="eyebrow">BITEX / DISCOVER LOCAL RESTAURANTS</p>
           <h1>Find your<br /><em>next favourite.</em></h1>
@@ -635,6 +639,55 @@ function HomePage({ onExploreRestaurants }) {
         <div className="trust-item"><span className="trust-icon"><MapPin aria-hidden="true" size={22} /></span><div><strong>Curated Menus</strong><small>Explore real dishes and reviews.</small></div></div>
         <div className="trust-item"><span className="trust-icon"><Star aria-hidden="true" size={22} /></span><div><strong>Easy Reservations</strong><small>Book your table in just a few taps.</small></div></div>
         <div className="trust-item"><span className="trust-icon"><Heart aria-hidden="true" size={22} /></span><div><strong>Support Local</strong><small>Eat local. Support local.</small></div></div>
+      </section>
+      <section className="home-video-section" aria-label="Featured videos">
+        <div className="home-video-grid">
+          <article className="home-video-card">
+            <video autoPlay loop muted playsInline preload="metadata" aria-label="Burger video">
+              <source src="https://v.ftcdn.net/18/99/61/59/700_F_1899615926_lrnN6BuYXq5U1EL8rj7WbV26hFnJFDNf_ST.mp4" type="video/mp4" />
+            </video>
+          </article>
+          <article className="home-video-card">
+            <video autoPlay loop muted playsInline preload="metadata" aria-label="Featured food video">
+              <source src="https://assets.mixkit.co/videos/13884/13884-720.mp4" type="video/mp4" />
+            </video>
+          </article>
+          <article className="home-video-card">
+            <video autoPlay loop muted playsInline preload="metadata" aria-label="Featured video 4">
+              <source src="https://assets.mixkit.co/videos/32457/32457-720.mp4" type="video/mp4" />
+            </video>
+          </article>
+          <article className="home-video-card">
+            <video autoPlay loop muted playsInline preload="metadata" aria-label="Featured video 5">
+              <source src="https://video-previews.elements.envatousercontent.com/files/90e2fca3-8f42-433e-9545-fd8cfa2ad22c/video_preview_h264.mp4" type="video/mp4" />
+            </video>
+          </article>
+          <article className="home-video-card">
+            <video autoPlay loop muted playsInline preload="metadata" aria-label="Featured video 6">
+              <source src="https://assets.mixkit.co/videos/41859/41859-720.mp4" type="video/mp4" />
+            </video>
+          </article>
+          <article className="home-video-card">
+            <video autoPlay loop muted playsInline preload="metadata" aria-label="Fresh salad prep video">
+              <source src="https://assets.mixkit.co/videos/21529/21529-720.mp4" type="video/mp4" />
+            </video>
+          </article>
+          <article className="home-video-card">
+            <video autoPlay loop muted playsInline preload="metadata" aria-label="Cold drink video" onLoadedMetadata={(event) => { event.currentTarget.defaultPlaybackRate = 4; event.currentTarget.playbackRate = 4 }}>
+              <source src="https://v.ftcdn.net/02/29/27/89/700_F_229278903_ASRGybm115zN9973YlMKT0LYEjzIv1Qv_ST.mp4" type="video/mp4" />
+            </video>
+          </article>
+          <article className="home-video-card">
+            <video autoPlay loop muted playsInline preload="metadata" aria-label="Coffee pouring video">
+              <source src="https://assets.mixkit.co/videos/43935/43935-720.mp4" type="video/mp4" />
+            </video>
+          </article>
+          <article className="home-video-card">
+            <video autoPlay loop muted playsInline preload="metadata" aria-label="Cake bite video">
+              <source src="https://assets.mixkit.co/videos/2442/2442-720.mp4" type="video/mp4" />
+            </video>
+          </article>
+        </div>
       </section>
     </>
   )
@@ -1808,7 +1861,7 @@ function App() {
   const cartTotal = cart.reduce((total, item) => total + item.price, 0)
   const navigateToOrder = () => { window.location.hash = restaurantSlug ? `order/${restaurantSlug}` : 'order'; setPage('order'); window.scrollTo(0, 0) }
   const openRestaurantMenu = (restaurant) => { window.location.hash = `menu/${restaurant.slug}`; setPage('menu'); setRestaurantSlug(restaurant.slug); window.scrollTo(0, 0) }
-  const openRestaurants = (query = '') => { setRestaurantSearchQuery(query); window.location.hash = 'restaurants'; setPage('restaurants'); window.scrollTo(0, 0) }
+  const openRestaurants = (query = '') => { setRestaurantSearchQuery(query); window.location.hash = 'restaurant-details'; setPage('restaurant-details'); window.scrollTo(0, 0) }
   const selectedRestaurant = page === 'home' || page === 'restaurants' ? undefined : restaurants.find((restaurant) => restaurant.slug === restaurantSlug)
   const pages = {
     home: <HomePage key={homeResetToken} onExploreRestaurants={openRestaurants} />,
