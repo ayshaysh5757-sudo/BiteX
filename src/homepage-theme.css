@@ -11566,6 +11566,9 @@ main#app-theme:has(> .hero-section) > .hero-section .hero-features li > span:not
   display: block;
   padding-right: clamp(24px, 6vw, 84px);
   padding-left: clamp(24px, 6vw, 84px);
+  background:
+    linear-gradient(90deg, rgba(13, 10, 8, 0.94) 0%, rgba(13, 10, 8, 0.82) 39%, rgba(13, 10, 8, 0.18) 100%),
+    url('/images/food-street-detail.jpg') center / cover no-repeat !important;
 }
 
 #app-theme .events-page .event-hero {
