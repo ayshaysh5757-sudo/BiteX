@@ -11637,6 +11637,10 @@ main#app-theme:has(> .hero-section) > .hero-section .hero-features li > span:not
   margin-left: auto;
 }
 
+#app-theme .events-page > .event-options > div {
+  background: #fff !important;
+}
+
 @media (max-width: 760px) {
   #app-theme .events-page.page-shell {
     padding-right: 7vw;
