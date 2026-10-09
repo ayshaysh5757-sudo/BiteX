@@ -163,7 +163,13 @@ create policy "Customers can read their own reservations"
   on public.reservations for select
   to authenticated
   using (customer_id = auth.uid());
-grant select on public.reservations to authenticated;
+drop policy if exists "Customers can cancel their own reservations" on public.reservations;
+create policy "Customers can cancel their own reservations"
+  on public.reservations for update
+  to authenticated
+  using (customer_id = auth.uid() and status in ('pending', 'confirmed'))
+  with check (customer_id = auth.uid() and status = 'cancelled');
+grant select, update(status) on public.reservations to authenticated;
 
 drop policy if exists "Anyone can submit event enquiries" on public.event_bookings;
 create policy "Anyone can submit event enquiries"

@@ -53,3 +53,5 @@ create policy "Admins can update event enquiries"
   to authenticated
   using (exists (select 1 from public.admin_users where user_id = auth.uid()))
   with check (exists (select 1 from public.admin_users where user_id = auth.uid()));
+
+notify pgrst, 'reload schema';

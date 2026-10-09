@@ -234,19 +234,34 @@ const menuItems = [
 ]
 
 const restaurants = [
-  { slug: 'food-street-533', name: 'Food Street 533', brand: 'FOOD STREET 533', logoMark: 'F5', cuisine: 'Desi / BBQ', rating: '4.8', reviews: '521', status: 'Open now', area: 'Main Bazaar, Samundri', phone: '+92 300 533 0533', email: 'hello@foodstreet533.pk', hours: '11am - 11pm', accent: '#d56b3f', image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=88', tag: 'Most loved' },
-  { slug: 'whites-castle-pizza', name: 'White Castle', brand: 'WHITES CASTLE', logoMark: 'WC', cuisine: 'Pizza / Fast food', rating: '4.6', reviews: '318', status: 'Open now', area: 'Samundri, Punjab', phone: '+92 301 225 5522', email: 'orders@whitescastle.pk', hours: '12pm - 1am', accent: '#c98a35', image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1000&q=88', tag: 'Crowd favourite' },
-  { slug: 'pizza-planet', name: 'Pizza Planet', brand: 'PIZZA PLANET', logoMark: 'PP', cuisine: 'Pizza / Drinks', rating: '4.5', reviews: '204', status: 'Open now', area: 'Samundri Road', phone: '+92 302 777 4242', email: 'hello@pizzaplanet.pk', hours: '1pm - 12am', accent: '#4f8a78', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1000&q=88', tag: 'Quick bites' },
+  { slug: 'food-street-533', name: 'Food Street 533', brand: 'FOOD STREET 533', logoMark: 'F5', cuisine: 'Desi / BBQ', rating: '4.8', reviews: '521', status: 'Open now', area: 'Main Bazaar, Samundri', phone: '+92 300 533 0533', email: 'hello@foodstreet533.pk', hours: '11am - 11pm', accent: '#d56b3f', image: '/images/food-street-detail.jpg', tag: 'Most loved' },
+  { slug: 'whites-castle-pizza', name: 'White Castle', brand: 'WHITES CASTLE', logoMark: 'WC', cuisine: 'Pizza / Fast food', rating: '4.6', reviews: '318', status: 'Open now', area: 'Samundri, Punjab', phone: '+92 301 225 5522', email: 'orders@whitescastle.pk', hours: '12pm - 1am', accent: '#c98a35', image: '/images/white-castle-detail.jpg', tag: 'Crowd favourite' },
+  { slug: 'pizza-planet', name: 'Pizza Planet', brand: 'PIZZA PLANET', logoMark: 'PP', cuisine: 'Pizza / Drinks', rating: '4.5', reviews: '204', status: 'Open now', area: 'Samundri Road', phone: '+92 302 777 4242', email: 'hello@pizzaplanet.pk', hours: '1pm - 12am', accent: '#4f8a78', image: '/images/pizza-planet-detail.jpg', tag: 'Quick bites' },
   { slug: 'wali-baba-rooftop', name: 'Wali Baba Restaurant and Rooftop', brand: 'WALI BABA', logoMark: 'WB', cuisine: 'Pakistani / BBQ', rating: '4.7', reviews: '176', status: 'Open now', area: 'Samundri, Punjab', phone: '+92 303 884 9090', email: 'bookings@walibaba.pk', hours: '5pm - 12am', accent: '#aa5b38', image: 'https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1000&q=88', tag: 'Rooftop dining' },
-  { slug: 'silver-stone-pizza', name: 'Silver Stone Pizza', brand: 'SILVER STONE', logoMark: 'SS', cuisine: 'Pizza / Fast food', rating: '4.6', reviews: '142', status: 'Open now', area: 'Main Road, Samundri', phone: '+92 304 555 0188', email: 'hello@silverstonepizza.pk', hours: '12pm - 12am', accent: '#8b6f47', image: 'https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=1000&q=88', tag: 'Stone baked' },
-  { slug: 'mr-sausy', name: 'Mr. Sausy', brand: 'MR. SAUSY', logoMark: 'MS', cuisine: 'Burgers / Fast food', rating: '4.5', reviews: '118', status: 'Open now', area: 'College Road, Samundri', phone: '+92 305 222 0199', email: 'orders@mrsausy.pk', hours: '1pm - 1am', accent: '#b55443', image: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=88', tag: 'Saucy favourites' },
-  { slug: 'slice-of-heaven', name: 'Slice of Heaven', brand: 'SLICE OF HEAVEN', logoMark: 'SH', cuisine: 'Pizza / Desserts', rating: '4.7', reviews: '165', status: 'Open now', area: 'Faisal Market, Samundri', phone: '+92 306 333 0277', email: 'hello@sliceofheaven.pk', hours: '12pm - 12am', accent: '#c27652', image: 'https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=1000&q=90', tag: 'Sweet slices' },
+  { slug: 'silver-stone-pizza', name: 'Silver Stone Pizza', brand: 'SILVER STONE', logoMark: 'SS', cuisine: 'Pizza / Fast food', rating: '4.6', reviews: '142', status: 'Open now', area: 'Main Road, Samundri', phone: '+92 304 555 0188', email: 'hello@silverstonepizza.pk', hours: '12pm - 12am', accent: '#8b6f47', image: '/images/silver-stone-detail.jpg', tag: 'Stone baked' },
+  { slug: 'mr-sausy', name: 'Mr. Sausy', brand: 'MR. SAUSY', logoMark: 'MS', cuisine: 'Burgers / Fast food', rating: '4.5', reviews: '118', status: 'Open now', area: 'College Road, Samundri', phone: '+92 305 222 0199', email: 'orders@mrsausy.pk', hours: '1pm - 1am', accent: '#b55443', image: '/images/mr-sausy-detail.jpg', tag: 'Saucy favourites' },
+  { slug: 'slice-of-heaven', name: 'Slice of Heaven', brand: 'SLICE OF HEAVEN', logoMark: 'SH', cuisine: 'Pizza / Desserts', rating: '4.7', reviews: '165', status: 'Open now', area: 'Faisal Market, Samundri', phone: '+92 306 333 0277', email: 'hello@sliceofheaven.pk', hours: '12pm - 12am', accent: '#c27652', image: '/images/slice-of-heaven-detail.jpg', tag: 'Sweet slices' },
   { slug: 'roadside-cafe', name: 'Roadside Cafe', brand: 'ROADSIDE CAFE', logoMark: 'RC', cuisine: 'Cafe / Breakfast', rating: '4.4', reviews: '96', status: 'Open now', area: 'Canal Road, Samundri', phone: '+92 307 444 0311', email: 'hello@roadsidecafe.pk', hours: '8am - 11pm', accent: '#55766a', image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=88', tag: 'All day cafe' },
   { slug: 'kanwal', name: 'Kanwal', brand: 'KANWAL', logoMark: 'K', cuisine: 'Pakistani / Desi', rating: '4.8', reviews: '149', status: 'Open now', area: 'Clock Tower Road, Samundri', phone: '+92 308 555 0412', email: 'hello@kanwal.pk', hours: '12pm - 11pm', accent: '#b97842', image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=88', tag: 'Home-style flavours' },
   { slug: 'fork-and-knives', name: 'Fork and Knives', brand: 'FORK AND KNIVES', logoMark: 'FK', cuisine: 'Continental / Cafe', rating: '4.6', reviews: '132', status: 'Open now', area: 'College Road, Samundri', phone: '+92 309 444 0521', email: 'hello@forkandknives.pk', hours: '11am - 11pm', accent: '#7a9271', image: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1000&q=88', tag: 'Good food' },
   { slug: 'samundri-dastarkhwan', name: 'Rice n Slice', brand: 'RICE N SLICE', logoMark: 'RS', cuisine: 'Punjabi / BBQ', rating: '4.7', reviews: '187', status: 'Open now', area: 'Jhang Road, Samundri', phone: '+92 300 777 0630', email: 'hello@samundridastarkhwan.pk', hours: '12pm - 12am', accent: '#9b603b', image: 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1000&q=88', tag: 'Family feasts' },
   { slug: 'mr-king', name: 'Mr King', brand: 'MR KING', logoMark: 'MK', cuisine: 'Burgers / Fast food', rating: '4.7', reviews: '126', status: 'Open now', area: 'Main Road, Samundri', phone: '+92 310 666 0717', email: 'orders@mrking.pk', hours: '12pm - 1am', accent: '#c58a3c', image: 'https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1000&q=88', tag: 'King-sized cravings' },
 ]
+
+const restaurantMenuHeroVideos = {
+  'food-street-533': 'https://assets.mixkit.co/videos/4385/4385-720.mp4',
+  'whites-castle-pizza': 'https://videos.pexels.com/video-files/31877282/13578828_2560_1440_30fps.mp4',
+  'pizza-planet': 'https://videos.pexels.com/video-files/31877279/13578888_2560_1440_30fps.mp4',
+  'wali-baba-rooftop': 'https://videos.pexels.com/video-files/29229072/12615454_3840_2160_25fps.mp4',
+  'silver-stone-pizza': 'https://videos.pexels.com/video-files/27917167/12262839_1920_1080_24fps.mp4',
+  'mr-sausy': 'https://videos.pexels.com/video-files/29229040/12615452_3840_2160_25fps.mp4',
+  'slice-of-heaven': 'https://videos.pexels.com/video-files/27917167/12262839_1920_1080_24fps.mp4',
+  'roadside-cafe': 'https://videos.pexels.com/video-files/29456564/12680294_3840_2160_25fps.mp4',
+  kanwal: 'https://videos.pexels.com/video-files/29229040/12615452_3840_2160_25fps.mp4',
+  'fork-and-knives': 'https://videos.pexels.com/video-files/29229072/12615454_3840_2160_25fps.mp4',
+  'samundri-dastarkhwan': 'https://assets.mixkit.co/videos/49231/49231-720.mp4',
+  'mr-king': 'https://videos.pexels.com/video-files/36531589/15491781_3840_2160_50fps.mp4',
+}
 
 const restaurantPageImages = {
   'food-street-533': { story: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=90', event: 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1400&q=90', reservation: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=90' },
@@ -353,15 +368,16 @@ function Header({ page, setPage, setHomeResetToken, setRestaurantSearchQuery, ca
     </button>
     <button className="menu-toggle" type="button" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-expanded={isMenuOpen} aria-label={isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}><span>Menu</span><b>{isMenuOpen ? 'x' : '+'}</b></button>
     <nav className={isMenuOpen ? 'is-open' : ''}>
-      <button className={page === 'home' ? 'current' : ''} type="button" onClick={() => navigate('home')}>Home</button>
+      <button className={`home-nav-button ${page === 'home' ? 'current' : ''}`} type="button" onClick={() => navigate('home')}><Home size={15} aria-hidden="true" /><span>Home</span></button>
       <button className={`restaurant-nav-button ${page === 'restaurant-details' ? 'current' : ''}`} type="button" onClick={() => navigate('restaurant-details')}>Restaurant Details</button>
       {restaurant && <>
         <button className={`restaurant-page-nav-button ${page === 'menu' ? 'current' : ''}`} type="button" onClick={() => navigate('menu')}>Menu</button>
         <button className={`restaurant-page-nav-button ${page === 'reserve' ? 'current' : ''}`} type="button" onClick={() => navigate('reserve')}>Reserve a Table</button>
         <button className={`restaurant-page-nav-button ${page === 'story' ? 'current' : ''}`} type="button" onClick={() => navigate('story')}>Our Story</button>
+        {['menu', 'order', 'reserve', 'story', 'events', 'history'].includes(page) && <button className={`restaurant-page-nav-button ${page === 'events' ? 'current' : ''}`} type="button" onClick={() => navigate('events')}>Private Dining</button>}
       </>}
       <button className={`account-button ${page === 'history' ? 'current' : ''}`} type="button" onClick={() => navigate('history')}>Dashboard</button>
-      <button className={`account-button ${page === 'login' || page === 'signup' ? 'current' : ''}`} type="button" onClick={() => navigate('signup')}>Login / Sign up</button>
+      {['home', 'restaurants', 'restaurant-details'].includes(page) && <button className={`account-button ${page === 'login' || page === 'signup' ? 'current' : ''}`} type="button" onClick={() => navigate('signup')}>Login / Sign up</button>}
       <button className="search-action" type="button" onClick={() => navigate('restaurants')} aria-label="Search restaurants"><Search aria-hidden="true" size={16} /></button>
       <button className={`cart-button ${page === 'order' ? 'current' : ''}`} type="button" aria-current={page === 'order' ? 'page' : undefined} onClick={() => navigate('order')} aria-label={`Open order, ${cart.length} items`}>
         <span className="cart-icon"><ShoppingBag aria-hidden="true" size={17} /></span>
@@ -394,9 +410,13 @@ function MenuPage({ setCart, restaurant }) {
   const availableCategories = ['All', ...new Set(uniqueItems.map((item) => item.category))]
   const selectedCategory = availableCategories.includes(activeCategory) ? activeCategory : 'All'
   const visibleItems = selectedCategory === 'All' ? uniqueItems : uniqueItems.filter((item) => item.category === selectedCategory)
+  const menuHeroVideo = restaurantMenuHeroVideos[restaurant?.slug]
   return (
-    <section className="menu-page page-shell">
+    <section className={`menu-page page-shell${menuHeroVideo ? ' menu-page--video-hero' : ''}`}>
       <div className="page-intro">
+        {menuHeroVideo && <video key={restaurant.slug} className="menu-hero-video" autoPlay loop muted playsInline preload="auto" aria-hidden="true">
+          <source src={menuHeroVideo} type="video/mp4" />
+        </video>}
         <div className="menu-poster-lockup" aria-hidden="true"><span className="menu-poster-script">Delicious</span><span className="menu-poster-word">MENU</span><div className="menu-poster-badge"><ChefHat size={20} /><span>BEST</span><strong>FOOD</strong><small>100% FRESH &amp; TASTY</small></div></div>
         <p className="eyebrow">Good food, good mood</p>
         <h1>{restaurant ? <>{restaurant.name}<br /><em>signature menu.</em></> : <>Taste Samundri,<br /><em>one plate at a time.</em></>}</h1>
@@ -468,13 +488,6 @@ function OrderPage({ cart, setCart, restaurant, setHistory, setPage, user }) {
   const total = cart.reduce((sum, item) => sum + Number(item.price), 0)
   const restaurantName = restaurant?.name || 'Samundri Food House'
   const isOrderConfirmed = status === 'success' || status === 'demo'
-  const selectionGalleryFallback = [
-    'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=85',
-    'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=85',
-    'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=900&q=85',
-  ]
-  const storyGallery = getStoryContent(restaurant).gallery
-  const selectionGallery = Array.from({ length: 3 }, (_, index) => storyGallery[index] || selectionGalleryFallback[index])
   const addMoreItems = () => {
     const nextPage = restaurant ? 'menu' : 'restaurants'
     window.location.hash = restaurant ? `menu/${restaurant.slug}` : 'restaurants'
@@ -558,9 +571,9 @@ function OrderPage({ cart, setCart, restaurant, setHistory, setPage, user }) {
     form.reset()
   }
 
-  return <section className={`order-page page-shell${isOrderConfirmed ? ' order-page--confirmed' : ''}`} style={{ '--order-backdrop': 'url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=2000&q=90")' }}>
+  return <section className={`order-page page-shell${isOrderConfirmed ? ' order-page--confirmed' : ''}`} style={{ '--order-backdrop': `url("${restaurant?.image || restaurants[0].image}")` }}>
     <div className="page-intro"><p className="eyebrow">{restaurantName} / Your order</p><h1>A beautiful meal,<br /><em>well arranged.</em></h1></div>
-    {!cart.length && !isOrderConfirmed ? <div className="empty-order order-confirmation order-confirmation--empty"><div className="order-confirmation-copy"><span className="confirmation-mark" aria-hidden="true"><i /><ChefHat size={22} strokeWidth={1.5} /><i /></span><p className="eyebrow">A good meal starts here</p><h2>Your selection is waiting.</h2><p>Explore the menu and choose something made for your table.</p><button className="confirmation-home-button" type="button" onClick={addMoreItems}><Utensils size={17} aria-hidden="true" />Explore menu<ArrowRight size={17} aria-hidden="true" /></button></div><div className="order-confirmation-gallery" aria-label={`${restaurantName} food gallery`}>{selectionGallery.map((image, index) => <div key={`${restaurant?.slug || 'default'}-selection-${index}`} className={`order-confirmation-gallery-card order-confirmation-gallery-card--${index + 1}`} role="img" aria-label={`${restaurantName} dish ${index + 1}`} style={{ backgroundImage: `url("${image}")` }} />)}</div></div> : isOrderConfirmed ? <div className="empty-order order-confirmation order-confirmation--success" ref={confirmationRef} tabIndex={-1} aria-live="polite">
+    {!cart.length && !isOrderConfirmed ? <div className="empty-order order-confirmation order-confirmation--empty"><div className="order-confirmation-copy"><span className="confirmation-mark" aria-hidden="true"><i /><ChefHat size={22} strokeWidth={1.5} /><i /></span><p className="eyebrow">A good meal starts here</p><h2>Your selection is waiting.</h2><p>Explore the menu and choose something made for your table.</p><button className="confirmation-home-button" type="button" onClick={addMoreItems}><Utensils size={17} aria-hidden="true" />Explore menu<ArrowRight size={17} aria-hidden="true" /></button></div></div> : isOrderConfirmed ? <div className="empty-order order-confirmation order-confirmation--success" ref={confirmationRef} tabIndex={-1} aria-live="polite">
       <div className="order-confirmation-copy">
         <span className="confirmation-mark" aria-hidden="true"><i /><ChefHat size={22} strokeWidth={1.5} /><i /></span>
         <p className="eyebrow">{status === 'demo' ? 'Order request saved' : 'Order placed'}</p>
@@ -598,7 +611,7 @@ function HomePage({ onExploreRestaurants }) {
     window.sessionStorage.removeItem('samundri_account_notice')
   }, [])
   /*
-  return <>{accountNotice && <p className="account-welcome" role="status">{accountNotice}</p>}<section className="hero-section"><div className="hero-copy"><p className="eyebrow">Samundri Food Hub / Discover locally</p><h1>Find your<br /><em>favorite restaurants.</em></h1><p className="hero-intro">The best of Samundri, brought together. Discover restaurants, browse menus, reserve a table, and make every meal count.</p><div className="hero-search"><span>âŒ•</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search restaurants, dishes or cuisines" aria-label="Search restaurants" /><button type="button" onClick={() => document.querySelector('.restaurant-discovery')?.scrollIntoView({ behavior: 'smooth' })}>Search</button></div><div className="hero-actions"><button className="primary-button" type="button" onClick={() => document.querySelector('.restaurant-discovery')?.scrollIntoView({ behavior: 'smooth' })}>Explore restaurants <span>â†—</span></button><button className="ghost-button" type="button" onClick={() => goTo('events')}>Plan an event <span>â†—</span></button></div></div><div className="hero-image" role="img" aria-label="A beautifully plated meal at a Samundri restaurant"><div className="hero-floating-card"><span className="floating-kicker">Featured tonight</span><strong>Food Street 533</strong><small><b>4.8 â˜…</b> Â· Popular in Samundri</small></div></div></section><section className="trust-strip"><span><b>01</b> Local favourites</span><span><b>02</b> Curated menus</span><span><b>03</b> Easy reservations</span><span><b>04</b> One food community</span></section><section className="restaurant-discovery"><div className="section-heading"><div><p className="eyebrow">Eat around Samundri</p><h2>Good places,<br /><em>close to home.</em></h2></div><p className="heading-note">Explore the restaurants locals keep coming back to, all in one place.</p></div><div className="discovery-toolbar"><div className="mini-filters"><button className={filterMode === 'all' ? 'active' : ''} type="button" onClick={() => setFilterMode('all')}>All restaurants</button><button className={filterMode === 'open' ? 'active' : ''} type="button" onClick={() => setFilterMode('open')}>Open now</button><button className={filterMode === 'top' ? 'active' : ''} type="button" onClick={() => setFilterMode('top')}>Top rated</button></div><span>{filteredRestaurants.length} places</span></div><div className="restaurant-grid">{filteredRestaurants.length ? filteredRestaurants.map((restaurant) => <RestaurantCard key={restaurant.name} restaurant={restaurant} onOpenMenu={onOpenRestaurant} />) : <div className="no-results"><strong>No places found.</strong><span>Try another search or filter.</span></div>}</div>  </section><section className="home-teaser"><div><p className="eyebrow">The Samundri table</p><h2>Come hungry,<br /><em>leave glowing.</em></h2></div><button className="text-link" type="button" onClick={() => goTo('reserve')}>Reserve a table <span>â†—</span></button></section><section className="story-section"><div className="story-gallery" aria-label="Food and family story gallery"><div className="story-photo story-photo-left" /><div className="story-photo story-photo-center" /><div className="story-photo story-photo-right" /></div><div className="story-copy"><p className="story-kicker">Our Story</p><h2>A family table built on flavor, tradition and <em>togetherness.</em></h2><p>Food Street 533 brings together slow-cooked karahi, sizzling BBQ platters and the kind of hospitality that makes every visit feel like a family gathering.</p><div className="story-quote"><span>Good Food</span><span>Good Vibes</span><em>♡</em></div><button className="story-cta" type="button" onClick={() => goTo('story')}>Explore Our Menu <span>→</span></button></div><div className="story-stats"><div><strong>1550</strong><span>Booked Guests</span></div><div><strong>125</strong><span>Family Feasts</span></div><div><strong>35</strong><span>Live Tables</span></div><div><strong>18</strong><span>Kitchen Team</span></div></div></section></>
+  return <>{accountNotice && <p className="account-welcome" role="status">{accountNotice}</p>}<section className="hero-section"><div className="hero-copy"><p className="eyebrow">Samundri Food Hub / Discover locally</p><h1>Find your<br /><em>favorite restaurants.</em></h1><p className="hero-intro">The best of Samundri, brought together. Discover restaurants, browse menus, reserve a table, and make every meal count.</p><div className="hero-search"><Search aria-hidden="true" size={18} className="search-icon" /><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search restaurants, dishes or cuisines" aria-label="Search restaurants" /><button type="button" onClick={() => document.querySelector('.restaurant-discovery')?.scrollIntoView({ behavior: 'smooth' })}>Search</button></div><div className="hero-actions">  <button className="primary-button" type="button" onClick={() => document.querySelector('.restaurant-discovery')?.scrollIntoView({ behavior: 'smooth' })}>Explore restaurants <span>→</span></button><button className="ghost-button" type="button" onClick={() => goTo('events')}>Plan an event <span>→</span></button></div></div><div className="hero-image" role="img" aria-label="A beautifully plated meal at a Samundri restaurant"><div className="hero-floating-card"><span className="floating-kicker">Featured tonight</span><strong>Food Street 533</strong><small><b>4.8 ★</b> · Popular in Samundri</small></div></div></section><section className="trust-strip"><span><b>01</b> Local favourites</span><span><b>02</b> Curated menus</span><span><b>03</b> Easy reservations</span><span><b>04</b> One food community</span></section><section className="restaurant-discovery"><div className="section-heading"><div><p className="eyebrow">Eat around Samundri</p><h2>Good places,<br /><em>close to home.</em></h2></div><p className="heading-note">Explore the restaurants locals keep coming back to, all in one place.</p></div><div className="discovery-toolbar"><div className="mini-filters"><button className={filterMode === 'all' ? 'active' : ''} type="button" onClick={() => setFilterMode('all')}>All restaurants</button><button className={filterMode === 'open' ? 'active' : ''} type="button" onClick={() => setFilterMode('open')}>Open now</button><button className={filterMode === 'top' ? 'active' : ''} type="button" onClick={() => setFilterMode('top')}>Top rated</button></div><span>{filteredRestaurants.length} places</span></div><div className="restaurant-grid">{filteredRestaurants.length ? filteredRestaurants.map((restaurant) => <RestaurantCard key={restaurant.name} restaurant={restaurant} onOpenMenu={onOpenRestaurant} />) : <div className="no-results"><strong>No places found.</strong><span>Try another search or filter.</span></div>}</div>  </section><section className="home-teaser"><div><p className="eyebrow">The Samundri table</p><h2>Come hungry,<br /><em>leave glowing.</em></h2></div><button className="text-link" type="button" onClick={() => goTo('reserve')}>Reserve a table <span>→</span></button></section><section className="story-section"><div className="story-gallery" aria-label="Food and family story gallery"><div className="story-photo story-photo-left" /><div className="story-photo story-photo-center" /><div className="story-photo story-photo-right" /></div><div className="story-copy"><p className="story-kicker">Our Story</p><h2>A family table built on flavor, tradition and <em>togetherness.</em></h2><p>Food Street 533 brings together slow-cooked karahi, sizzling BBQ platters and the kind of hospitality that makes every visit feel like a family gathering.</p><div className="story-quote"><span>Good Food</span><span>Good Vibes</span><em>♡</em></div><button className="story-cta" type="button" onClick={() => goTo('story')}>Explore Our Menu <span>→</span></button></div><div className="story-stats"><div><strong>1550</strong><span>Booked Guests</span></div><div><strong>125</strong><span>Family Feasts</span></div><div><strong>35</strong><span>Live Tables</span></div><div><strong>18</strong><span>Kitchen team</span></div></div></section></>
 */
 
   const revealDiscovery = () => {
@@ -620,9 +633,10 @@ function HomePage({ onExploreRestaurants }) {
           <h1>Find your<br /><em>next favourite.</em></h1>
           <p className="hero-intro">Discover local restaurants and the dishes worth coming back for.</p>
           <div className="hero-search">
-            <span className="search-icon"><Search aria-hidden="true" size={18} /></span>
-            <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search restaurants, cuisines or locations..." aria-label="Search restaurants" />
-            <button type="button" onClick={revealDiscovery}>Search</button>
+            <input value={query} onChange={(event) => setQuery(event.target.value)} onKeyDown={(event) => { if (event.key === 'Enter') { event.preventDefault(); revealDiscovery() } }} placeholder="Search restaurants, cuisines or locations..." aria-label="Search restaurants" />
+            <button type="button" className="search-icon" onClick={revealDiscovery} aria-label="Search restaurants">
+              <Search aria-hidden="true" size={18} />
+            </button>
           </div>
           <ul className="hero-features">
             <li><span className="feature-icon"><ShoppingBag aria-hidden="true" size={17} /></span><span>Top Rated Restaurants</span></li>
@@ -694,8 +708,8 @@ function HomePage({ onExploreRestaurants }) {
  }
 
 function RestaurantsPage({ initialQuery, onOpenRestaurant, detailsView = false }) {
-  const [query, setQuery] = useState('')
-  const [activeQuery, setActiveQuery] = useState(initialQuery)
+  const [query, setQuery] = useState(initialQuery || '')
+  const [activeQuery, setActiveQuery] = useState(initialQuery || '')
   const [filterMode, setFilterMode] = useState('all')
   const filteredRestaurants = restaurants.filter((restaurant) => {
     const matchesSearch = `${restaurant.name} ${restaurant.cuisine} ${restaurant.area}`.toLowerCase().includes(activeQuery.toLowerCase())
@@ -1096,10 +1110,7 @@ function EventsPage({ restaurant, setHistory, user }) {
     try { return JSON.parse(window.sessionStorage.getItem('samundri_event_draft') || 'null') } catch { return null }
   })
   const restaurantName = restaurant?.name || 'Samundri Food House'
-  const eventImage = restaurantPageImages[restaurant?.slug]?.event || 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1400&q=90'
   useEffect(() => {
-    const imagePanel = document.querySelector('.event-image')
-    if (imagePanel) imagePanel.style.backgroundImage = `url('${eventImage}')`
     if (eventDraft) {
       const form = document.querySelector('.event-enquiry-form')
       if (form) {
@@ -1111,7 +1122,7 @@ function EventsPage({ restaurant, setHistory, user }) {
         form.elements.requirements.value = eventDraft.requirements || ''
       }
     }
-  }, [eventDraft, eventImage])
+  }, [eventDraft])
   const submitEvent = async (event) => {
     event.preventDefault()
     const form = event.currentTarget
@@ -1151,7 +1162,7 @@ function EventsPage({ restaurant, setHistory, user }) {
     setStatus('enquiry_sent')
     form.reset()
   }
-  return <section className="events-page page-shell"><div className="page-intro"><p className="eyebrow">{restaurantName} / Private events</p><h1>Made for<br /><em>good company.</em></h1><p>Send an event enquiry to {restaurantName}. The restaurant will review your details and reply with a quote.</p></div><div className="event-feature"><div className="event-image" role="img" aria-label={`A long table prepared at ${restaurantName}`} /><div className="event-copy"><p className="eyebrow">Private dining enquiry</p><h2>Your table,<br /><em>your evening.</em></h2><p>Groups of 8 to 28 guests can request a tailored menu, thoughtful drinks, and private attention.</p><form className="event-enquiry-form" onSubmit={submitEvent}><label>Name<input name="customer_name" required placeholder="Your name" /></label><label>Email<input name="customer_email" required type="email" placeholder="you@example.com" /></label><label>Event type<select name="event_type" required defaultValue=""><option value="" disabled>Select event type</option><option>Birthday</option><option>Family gathering</option><option>Work dinner</option><option>Engagement</option><option>Other</option></select></label><div className="form-row"><label>Date<input name="event_date" required type="date" /></label><label>Guests<input name="guest_count" required min="8" max="28" type="number" placeholder="8-28" /></label></div><label>Requirements<textarea name="requirements" required rows="3" placeholder="Tell the restaurant about your event, menu or seating needs." /></label><button className="primary-button" type="submit" disabled={status === 'saving'}>{status === 'saving' ? 'Sending...' : 'Send enquiry'} <span>-&gt;</span></button>{status === 'enquiry_sent' && <small className="form-success">Status: enquiry_sent. {restaurantName} will reply with a quote.</small>}{status === 'error' && <small className="form-error">We could not save the enquiry. {errorMessage}</small>}</form></div></div><div className="event-options"><div><span>01</span><h3>Celebrations</h3><p>Birthdays, anniversaries, and the moments worth gathering for.</p></div><div><span>02</span><h3>Work dinners</h3><p>A relaxed setting for ideas, introductions, and a meal people remember.</p></div><div><span>03</span><h3>Full buyout</h3><p>Make the whole room yours for an evening of generous hospitality.</p></div></div></section>
+  return <section className="events-page page-shell"><div className="event-hero"><div className="event-copy"><p className="eyebrow">{restaurantName} / Private events</p><h1>Made for<br /><em>good company.</em></h1><p>Send an event enquiry to {restaurantName}. The restaurant will review your details and reply with a quote.</p></div><div className="event-form-panel"><form className="order-form event-enquiry-form" onSubmit={submitEvent}><label>Name<input name="customer_name" required placeholder="Your name" /></label><label>Email<input name="customer_email" required type="email" placeholder="you@example.com" /></label><label>Event type<select name="event_type" required defaultValue=""><option value="" disabled>Select event type</option><option>Birthday</option><option>Family gathering</option><option>Work dinner</option><option>Engagement</option><option>Other</option></select></label><div className="form-row"><label>Date<input name="event_date" required type="date" /></label><label>Guests<input name="guest_count" required min="8" max="28" type="number" placeholder="8-28" /></label></div><label>Requirements<textarea name="requirements" required rows="3" placeholder="Tell the restaurant about your event, menu or seating needs." /></label><button className="primary-button" type="submit" disabled={status === 'saving'}>{status === 'saving' ? 'Sending...' : 'Send enquiry'} <span>-&gt;</span></button>{status === 'enquiry_sent' && <small className="form-success">Status: enquiry_sent. {restaurantName} will reply with a quote.</small>}{status === 'error' && <small className="form-error">We could not save the enquiry. {errorMessage}</small>}</form></div></div><div className="event-options"><div><span>01</span><h3>Celebrations</h3><p>Birthdays, anniversaries, and the moments worth gathering for.</p></div><div><span>02</span><h3>Work dinners</h3><p>A relaxed setting for ideas, introductions, and a meal people remember.</p></div><div><span>03</span><h3>Full buyout</h3><p>Make the whole room yours for an evening of generous hospitality.</p></div></div></section>
 }
 
 function ContactPage({ restaurant, setPage }) {
@@ -1186,7 +1197,7 @@ function AdminPage() {
   if (!supabase) return <section className="admin-page page-shell"><div className="page-intro"><p className="eyebrow">Staff area</p><h1>Supabase is<br /><em>not configured.</em></h1><p>Add Supabase credentials to use the reservation dashboard.</p></div></section>
   if (!session) return <section className="admin-page page-shell"><div className="admin-login"><p className="eyebrow">White Castle staff</p><h1>Manage<br /><em>reservations.</em></h1><form onSubmit={signIn}><label>Email<input required type="email" value={email} onChange={(event) => setEmail(event.target.value)} /></label><label>Password<input required type="password" value={password} onChange={(event) => setPassword(event.target.value)} /></label><button className="primary-button" type="submit">Sign in <span>-&gt;</span></button>{message && <small className="form-error">{message}</small>}</form></div></section>
   if (!isAdmin) return <section className="admin-page page-shell"><div className="page-intro"><p className="eyebrow">Staff area</p><h1>Admin access<br /><em>required.</em></h1><p>This account is not on the admin access list.</p><button className="text-link" type="button" onClick={() => supabase.auth.signOut()}>Sign out <span>-&gt;</span></button></div></section>
-  return <section className="admin-page page-shell"><div className="admin-heading"><div><p className="eyebrow">Staff area</p><h1>Reservation<br /><em>book.</em></h1></div><button className="text-link" type="button" onClick={() => supabase.auth.signOut()}>Sign out <span>-&gt;</span></button></div>{message && <p className="form-error">{message}</p>}<div className="reservation-list">{reservations.length === 0 && <p>No reservations found.</p>}{reservations.map((item) => <article className="reservation-row" key={item.id}><div><strong>{item.name}</strong><span>{item.email}</span></div><div><strong>{item.reservation_date}</strong><span>{item.guests} guests</span></div><select value={item.status} onChange={(event) => updateStatus(item.id, event.target.value)}><option value="pending">Pending</option><option value="confirmed">Confirmed</option><option value="cancelled">Cancelled</option></select><button className="delete-button" type="button" onClick={() => removeReservation(item.id)}>Delete</button></article>)}</div><div className="staff-events"><div className="admin-heading"><div><p className="eyebrow">Private dining</p><h2>Event enquiries</h2></div><span className="status-badge">{events.length} total</span></div>{events.length === 0 && <p>No event enquiries found.</p>}{events.map((item) => <article className="event-admin-row" key={item.id}><div><strong>{item.event_type}</strong><span>{item.customer_name} Â· {item.customer_email}</span><span>{item.event_date} Â· {item.guest_count} guests Â· {item.restaurant_slug}</span><small>{item.requirements}</small></div><div className="event-admin-actions"><label>Quote<input type="number" min="0" defaultValue={item.quote_amount || ''} onBlur={(event) => updateEvent(item.id, { quote_amount: event.target.value ? Number(event.target.value) : null, status: event.target.value ? 'quoted' : item.status })} placeholder="Rs." /></label><select value={item.status} onChange={(event) => updateEvent(item.id, { status: event.target.value })}><option value="enquiry_sent">Enquiry sent</option><option value="quoted">Quoted</option><option value="accepted">Accepted</option><option value="rejected_by_restaurant">Rejected</option><option value="expired">Expired</option></select></div></article>)}</div></section>
+  return <section className="admin-page page-shell"><div className="admin-heading"><div><p className="eyebrow">Staff area</p><h1>Reservation<br /><em>book.</em></h1></div><button className="text-link" type="button" onClick={() => supabase.auth.signOut()}>Sign out <span>-&gt;</span></button></div>{message && <p className="form-error">{message}</p>}<div className="reservation-list">{reservations.length === 0 && <p>No reservations found.</p>}{reservations.map((item) => <article className="reservation-row" key={item.id}><div><strong>{item.name}</strong><span>{item.email}</span></div><div><strong>{item.reservation_date}</strong><span>{item.guests} guests</span></div><select value={item.status} onChange={(event) => updateStatus(item.id, event.target.value)}><option value="pending">Pending</option><option value="confirmed">Confirmed</option><option value="cancelled">Cancelled</option></select><button className="delete-button" type="button" onClick={() => removeReservation(item.id)}>Delete</button></article>)}</div>  <div className="staff-events"><div className="admin-heading"><div><p className="eyebrow">Private dining</p><h2>Event enquiries</h2></div><span className="status-badge">{events.length} total</span></div>{events.length === 0 && <p>No event enquiries found.</p>}{events.map((item) => <article className="event-admin-row" key={item.id}><div><strong>{item.event_type}</strong><span>{item.customer_name} · {item.customer_email}</span><span>{item.event_date} · {item.guest_count} guests · {item.restaurant_slug}</span><small>{item.requirements}</small></div><div className="event-admin-actions"><label>Quote<input type="number" min="0" defaultValue={item.quote_amount || ''} onBlur={(event) => updateEvent(item.id, { quote_amount: event.target.value ? Number(event.target.value) : null, status: event.target.value ? 'quoted' : item.status })} placeholder="Rs." /></label><select value={item.status} onChange={(event) => updateEvent(item.id, { status: event.target.value })}><option value="enquiry_sent">Enquiry sent</option><option value="quoted">Quoted</option><option value="accepted">Accepted</option><option value="rejected_by_restaurant">Rejected</option><option value="expired">Expired</option></select></div></article>)}</div></section>
 }
 
 function AdminOrdersPanel() {
@@ -1528,6 +1539,9 @@ function LoginPage({ setPage, recoveryMode, onRecoveryComplete, initialMode = 'l
 function HistoryPage({ history = [], restaurant, user, setCart, setHistory, setPage }) {
   const [activeSection, setActiveSection] = useState('overview')
   const [spendBreakdownOpen, setSpendBreakdownOpen] = useState(false)
+  const [expandedReservationId, setExpandedReservationId] = useState(null)
+  const [cancellingReservationId, setCancellingReservationId] = useState(null)
+  const [reservationActionMessage, setReservationActionMessage] = useState('')
   const [accountOrders, setAccountOrders] = useState([])
   const [accountReservations, setAccountReservations] = useState([])
   const [accountEvents, setAccountEvents] = useState([])
@@ -1679,6 +1693,58 @@ function HistoryPage({ history = [], restaurant, user, setCart, setHistory, setP
     window.localStorage.setItem('samundri_activity_history', JSON.stringify(nextHistory))
     setHistory(nextHistory)
   }
+  const canCancelReservation = (entry) => {
+    const currentDate = new Date()
+    const today = `${currentDate.getFullYear()}-${String(currentDate.getMonth() + 1).padStart(2, '0')}-${String(currentDate.getDate()).padStart(2, '0')}`
+    return ['pending', 'confirmed'].includes(entry.status) && entry.date.slice(0, 10) >= today
+  }
+  const cancelReservation = async (entry) => {
+    if (!window.confirm(`Cancel your reservation at ${entry.restaurantName}?`)) return
+    setReservationActionMessage('')
+    const isAccountReservation = accountReservations.some((item) => String(item.id) === String(entry.id))
+    if (supabase && (!user || !isAccountReservation)) {
+      setReservationActionMessage('Sign in with the account used to book this reservation to cancel it.')
+      return
+    }
+    if (supabase) {
+      setCancellingReservationId(String(entry.id))
+      const { data, error } = await supabase
+        .from('reservations')
+        .update({ status: 'cancelled' })
+        .eq('id', entry.id)
+        .eq('customer_id', user.id)
+        .in('status', ['pending', 'confirmed'])
+        .select('id')
+        .maybeSingle()
+      setCancellingReservationId(null)
+      if (error) {
+        setReservationActionMessage(`Could not cancel reservation: ${error.message}`)
+        return
+      }
+      if (!data) {
+        setReservationActionMessage('This reservation could not be cancelled. It may already be cancelled or no longer active.')
+        return
+      }
+      const nextHistory = getStoredHistory().map((item) => item.type === 'reservation' && String(item.id) === String(entry.id) ? { ...item, status: 'cancelled' } : item)
+      window.localStorage.setItem('samundri_activity_history', JSON.stringify(nextHistory))
+      setHistory(nextHistory)
+      setAccountReservations((current) => current.map((item) => String(item.id) === String(entry.id) ? { ...item, status: 'cancelled' } : item))
+    } else {
+      let reservedTables
+      try {
+        reservedTables = JSON.parse(window.localStorage.getItem('samundri_reserved_tables') || '[]')
+        if (!Array.isArray(reservedTables)) throw new Error('Stored reservation data is invalid.')
+      } catch (error) {
+        setReservationActionMessage(`Could not cancel reservation locally: ${error.message}`)
+        return
+      }
+      const nextHistory = getStoredHistory().map((item) => item.type === 'reservation' && String(item.id) === String(entry.id) ? { ...item, status: 'cancelled' } : item)
+      window.localStorage.setItem('samundri_activity_history', JSON.stringify(nextHistory))
+      setHistory(nextHistory)
+      const tableKey = `${entry.restaurantSlug}:${entry.date.slice(0, 10)}:${entry.tableNumber}`
+      window.localStorage.setItem('samundri_reserved_tables', JSON.stringify(reservedTables.filter((key) => key !== tableKey)))
+    }
+  }
   const repeatReservation = (entry) => {
     window.sessionStorage.setItem('samundri_reservation_draft', JSON.stringify({ ...entry, id: null }))
     navigate('reserve')
@@ -1738,7 +1804,13 @@ function HistoryPage({ history = [], restaurant, user, setCart, setHistory, setP
       {entry.items?.length > 0 && <div className="dashboard-order-actions"><button type="button" onClick={() => orderAgain(entry)}>Order again <ArrowUpRight aria-hidden="true" size={14} /></button></div>}
     </details>
   })}</div> : <div className="dashboard-empty"><ShoppingBag size={24} /><strong>No orders yet</strong><span>Your completed and current orders will appear here.</span><button type="button" onClick={() => navigate('restaurants')}>Explore restaurants <ArrowUpRight size={15} /></button></div>
-  const reservationList = (items) => items.length ? <div className="dashboard-reservation-list">{items.map((entry) => <article className="dashboard-reservation-row" key={`${entry.id}-${entry.restaurantSlug}`}><span className="dashboard-calendar-icon"><CalendarDays size={19} /></span><div><small className="dashboard-activity-label">Reservation at {entry.restaurantName}</small><strong>{entry.restaurantName}</strong><span>{new Date(entry.date).toLocaleDateString()} · {entry.time || 'Any time'}</span><small>Table {entry.tableNumber} · {entry.guests} guests</small><div className="dashboard-entry-actions"><button type="button" onClick={() => repeatReservation(entry)}>Book again</button><button type="button" onClick={() => changeReservation(entry)}>Change</button><button type="button" onClick={() => removeHistoryEntry(entry)}>Delete</button></div></div><span className="dashboard-status">{entry.status}</span></article>)}</div> : <div className="dashboard-empty dashboard-empty-compact"><CalendarDays size={22} /><strong>No reservations yet</strong><span>Your upcoming table bookings will appear here.</span><button type="button" onClick={() => navigate('reserve')}>Book a table <ArrowUpRight size={15} /></button></div>
+  const reservationList = (items) => items.length ? <div className="dashboard-reservation-list">{items.map((entry) => {
+    const isExpanded = String(expandedReservationId) === String(entry.id)
+    const canCancel = canCancelReservation(entry)
+    const isAccountReservation = accountReservations.some((item) => String(item.id) === String(entry.id))
+    const cancelUnavailable = Boolean(supabase && (!user || !isAccountReservation))
+    return <article className="dashboard-reservation-row" key={`${entry.id}-${entry.restaurantSlug}`}><span className="dashboard-calendar-icon"><CalendarDays size={19} /></span><div><small className="dashboard-activity-label">Reservation at {entry.restaurantName}</small><strong>{entry.restaurantName}</strong><span>{new Date(entry.date).toLocaleDateString()} · {entry.time || 'Any time'}</span><small>Table {entry.tableNumber} · {entry.guests} guests</small><div className="dashboard-entry-actions"><button type="button" aria-expanded={isExpanded} onClick={() => setExpandedReservationId(isExpanded ? null : entry.id)}>{isExpanded ? 'Hide details' : 'Review'}</button><button type="button" onClick={() => repeatReservation(entry)}>Book again</button>{canCancel && <><button type="button" onClick={() => changeReservation(entry)}>Change</button><button type="button" className="dashboard-cancel-action" disabled={Boolean(cancellingReservationId) || cancelUnavailable} title={cancelUnavailable ? 'Sign in with the account used to book this reservation to cancel it.' : undefined} onClick={() => cancelReservation(entry)}>{cancellingReservationId === String(entry.id) ? 'Cancelling...' : 'Cancel'}</button></>}</div>{cancelUnavailable && canCancel && <small className="dashboard-reservation-signin-note">Sign in with the account used to book this reservation to cancel it.</small>}{isExpanded && <div className="dashboard-reservation-details"><span><strong>Name</strong>{entry.name || displayName}</span><span><strong>Email</strong>{entry.email || displayEmail}</span><span><strong>Contact</strong>{entry.customerPhone || 'Not provided'}</span><span><strong>Date and time</strong>{new Date(entry.date).toLocaleDateString()} · {entry.time || 'Any time'}</span><span><strong>Guests</strong>{entry.guests}</span><span><strong>Table</strong>{entry.tableNumber}</span></div>}</div><span className={`dashboard-status status-${entry.status}`}>{entry.status}</span></article>
+  })}{reservationActionMessage && <p className="form-error dashboard-reservation-message" role="status">{reservationActionMessage}</p>}</div> : <div className="dashboard-empty dashboard-empty-compact"><CalendarDays size={22} /><strong>No reservations yet</strong><span>Your upcoming table bookings will appear here.</span><button type="button" onClick={() => navigate('reserve')}>Book a table <ArrowUpRight size={15} /></button></div>
   const eventList = (items) => items.length ? <div className="dashboard-reservation-list">{items.map((entry) => <article className="dashboard-reservation-row" key={`${entry.id}-${entry.restaurantSlug}`}><span className="dashboard-calendar-icon"><CalendarDays size={19} /></span><div><small className="dashboard-activity-label">Event enquiry at {entry.restaurantName}</small><strong>{entry.eventType}</strong><span>{new Date(entry.date).toLocaleDateString()} · {entry.guests} guests</span><small>{entry.name} · {entry.requirements}</small><div className="dashboard-entry-actions"><button type="button" onClick={() => repeatEvent(entry)}>Book again</button><button type="button" onClick={() => changeEvent(entry)}>Change</button><button type="button" onClick={() => removeHistoryEntry(entry)}>Delete</button></div></div><span className="dashboard-status">{entry.status}</span></article>)}</div> : <div className="dashboard-empty dashboard-empty-compact"><CalendarDays size={22} /><strong>No event enquiries yet</strong><span>Your private dining requests will appear here.</span><button type="button" onClick={() => navigate('events')}>Plan an event <ArrowUpRight size={15} /></button></div>
 
   return <section className="customer-dashboard">
@@ -1865,8 +1937,8 @@ function App() {
   const selectedRestaurant = page === 'home' || page === 'restaurants' ? undefined : restaurants.find((restaurant) => restaurant.slug === restaurantSlug)
   const pages = {
     home: <HomePage key={homeResetToken} onExploreRestaurants={openRestaurants} />,
-    restaurants: <RestaurantsPage key="restaurants" initialQuery={restaurantSearchQuery} onOpenRestaurant={openRestaurantMenu} />,
-    'restaurant-details': <RestaurantsPage key="restaurant-details" initialQuery={restaurantSearchQuery} onOpenRestaurant={openRestaurantMenu} detailsView />,
+    restaurants: <RestaurantsPage key={`restaurants-${restaurantSearchQuery}`} initialQuery={restaurantSearchQuery} onOpenRestaurant={openRestaurantMenu} />,
+    'restaurant-details': <RestaurantsPage key={`restaurant-details-${restaurantSearchQuery}`} initialQuery={restaurantSearchQuery} onOpenRestaurant={openRestaurantMenu} detailsView />,
     menu: <MenuPage setCart={setCart} restaurant={selectedRestaurant} />,
     order: <OrderPage cart={cart} setCart={setCart} restaurant={selectedRestaurant} setHistory={setHistory} setPage={setPage} user={user} />,
     history: <HistoryPage key={user?.id || 'guest'} history={history} restaurant={selectedRestaurant} user={user} setCart={setCart} setHistory={setHistory} setPage={setPage} />,
